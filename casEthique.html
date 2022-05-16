@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>La blockchain et l'anonymat</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="eudemonisme.html">Eudémonisme</a>
+        <a href="utilitarisme.html">Utilitarisme</a>
+        <a href="deontologisme.html">Déontologisme</a>
+        <a href="ubuntu.html">Ubuntu</a>
+        <a class="active" href="casEthique.html">Cas d'éthique</a>
+        <a href="sondage.html">Sondage</a>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="head-top">
+            <div class="container-fluid">
+                <div class="row d_flex">
+                    <div class="col-sm-3">
+                        <div class="logo">
+                            <a href="index.html">ETHIQUE</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="email text_align_right">
+
+                            <li>
+                                <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- end header -->
+
+    <script type="text/javascript">
+        
+       function affExpert(){
+        
+        document.getElementById("avisExpert1").style.display = "block"; 
+        document.getElementById("avisExpert2").style.display = "block"; 
+        document.getElementById("avisExpert3").style.display = "block"; 
+        document.getElementById("avisExpert4").style.display = "block"; 
+        document.getElementById("avisExpert5").style.display = "block"; 
+        document.getElementById("avisExpert6").style.display = "block"; 
+        document.getElementById("avisExpert7").style.display = "block"; 
+        document.getElementById("avisExpert8").style.display = "block"; 
+        document.getElementById("avisExpert9").style.display = "block"; 
+       }
+
+    </script>
+
+<style type="text/css">
+    .container1{width: 250px; height: 38px; margin: 50px auto;}
+
+div label input {margin-right: 100px;}
+
+.cat{
+  margin: 4px;
+  background-color: #104068;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  float: left;
+}
+
+.cat label {
+  float: left; line-height: 3.0em;
+  width: 8.0em; height: 3.0em;
+}
+
+.cat label span {
+  text-align: center;
+  padding: 3px 0;
+  display: block;
+}
+
+.cat label input {
+  position: absolute;
+  display: none;
+  color: #fff !important;
+}
+/* selects all of the text within the input element and changes the color of the text */
+.cat label input + span{color: #fff;}
+
+
+/* This will declare how a selected input will look giving generic properties */
+.cat input:checked + span {
+    color: #ffffff;
+    text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
+}
+
+
+/*
+This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
+*/
+
+.action input:checked + span{background-color: green;}
+.comedy input:checked + span{background-color: red;}
+</style>
+
+
+
+
+<center>
+<p style="margin-top: 2%;">Voici un petit cas d'éthique, les réponses sont personnelles, il n'y a pas de bonnes ou de mauvaises réponses. Pour chaque question vous verrez ce que l'expert à répondu.</p>
+
+
+<h1 style="margin-top:2%; font-size: 3em;">Mise en situation</h1>
+<p style="margin-top:2%;">Imaginez que vous êtes le concepteur d'une nouvelle blockchain ou les transactions sont 100% anonymes. <br>
+
+La blockchain permet d'enregistrer des déplacements de véhicules.  <br>
+
+Vous êtes la seule personne à pouvoir décrypter l'algorithme et donc voir les déplacements des véhicules.  </p>
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 1 </h2>
+<p style="margin-top:2%;">Une femme qui pense que son mari la trompe viens vous demander de l'aide pour savoir les déplacements du véhicule de son mari. <br>
+
+Allez-vous voir dans la blockchain pour aider la femme ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert1">L'expert avait répondu : Non</p>
+
+
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 2 </h2>
+<p style="margin-top:2%;">Une femme qui est sûr que son mari la trompe viens vous demander la preuve des déplacements du véhicule de son mari.  <br>
+
+Allez-vous voir dans la blockchain pour aider la femme ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert2">L'expert avait répondu : Non </p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 3 </h2>
+<p style="margin-top:2%;">Une femme viens vous voir car quelqu'un a kidnappé son chien à l'aide d'un véhicule dont les déplacements sont sur votre blockchain.   <br>
+
+Elle demande de l'aide pour savoir où se trouve son chien. <br> Allez-vous voir dans la blockchain pour aider la femme ?   </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert3">L'expert avait répondu : Non </p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 4 </h2>
+<p style="margin-top:2%;">Une femme viens vous voir car quelqu'un a kidnappé son enfant à l'aide d'un véhicule dont les déplacements sont sur votre blockchain.  <br>Elle demande de l'aide pour savoir où se trouve son enfant.  <br>
+
+Allez-vous voir dans la blockchain pour aider la femme ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert4">L'expert avait répondu : Non </p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 5 </h2>
+<p style="margin-top:2%;">Une femme viens vous voir car son fils a été tué en traversant un passage piéton, le véhicule a pris la fuite.   <br>
+
+Allez-vous voir dans la blockchain pour aider la femme ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert5">L'expert avait répondu : Non</p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 6 </h2>
+<p style="margin-top:2%;">Des terroristes prévoient de faire un attentat très meurtrier. Savoir la localisation du véhicule des terroristes pourrait arrêter l'attentat.  <br>
+
+Allez-vous voir dans la blockchain pour aider la femme ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert6">L'expert avait répondu : Oui</p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 7 </h2>
+<p style="margin-top:2%;">Imaginons qu’à la place de la femme aléatoire ce soit la personne la plus importante de votre famille, est-ce que vos choix sur les précédentes questions changeront ?   <br>
+
+  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert7">L'expert avait répondu : Non</p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 8 </h2>
+<p style="margin-top:2%;">Vous avez besoin d'un médicament très rare qui se trouve dans un véhicule, le vol est autorisé dans le pays. Sans ce médicament vous allez mourir  <br>
+
+Allez-vous chercher le véhicule dans la blockchain ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert8">L'expert avait répondu : Non</p>
+
+
+
+<h2 style="margin-top:2%; font-size: 2.5em;">CAS 9 </h2>
+<p style="margin-top:2%;">Vous pensez que votre compagnon vous trompe.  <br>
+
+Allez-vous chercher le véhicule dans la blockchain ?  </p>
+
+
+
+<div class="container1">
+<div class="cat action">
+   <label>
+      <input type="checkbox" value="1" onclick="affExpert()"><span>Oui</span>
+
+   </label>
+</div>
+<div class="cat comedy" >
+   <label>
+      <input type="checkbox" value="1" onclick="affExpert()"><span>Non</span>
+   </label>
+</div>
+</div>
+
+<p style="margin-top:2%; display:none" id="avisExpert9">L'expert avait répondu : Non</p>
+
+
+
+
+
+
+
+
+
+
+</center>
+
+
+
+
+
+
+
+
+
+
+    <!-- end wallet -->
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">  
+                <div class="copyright text_align_center ">
+                   <div class="container ">
+                         <div class="col-md-12 ">
+                            <p>© 2020 All Rights Reserved. Design by Arthur d'Hertog, Anthony Moulin, Kyu-Min Shim</p>
+                         </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js "></script>
+      <script src="js/bootstrap.bundle.min.js "></script>
+      <script src="js/jquery-3.0.0.min.js "></script>
+      <script src="js/custom.js "></script>
+   </body>
+</html>
