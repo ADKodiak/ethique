@@ -28,6 +28,9 @@
 <!-- body -->
 
 <body class="main-layout">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js">
+    </script>
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -73,7 +76,156 @@
     <!-- end header -->
 
     <!-- wallet -->
+    <!-- wallet -->
+    <div class="wallet">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-3">
+                    <div class="titlepage text_align_center">
+                        <h2>Sondage</h2>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class=" mx-5">
+                        <p>Après s’être familiariser avec le sujet nous avons réalisé une enquête auprès de 51 personnes sur internet. Nous allons donc analyser leur réponse pour mieux comprendre l’avis des gens sur le sujet. Malheureusement 51 personnes n’est pas un grand nombre mais c’est assez pour déjà avoir une idée.
+                        </p><br />
+                    </div>
+                </div>
 
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to right, #69A6EF , #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Quel âge avez-vous ? </h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Nous avons d’abord demandé l’âge des participants pour savoir quel public nous touchions. Car avec l’âge et la génération les personnes réfléchissent et pensent différemment. Nous remarquons que notre sondage à plus toucher de jeune personne.</p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4">
+                            <canvas id="chart" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to left, #69A6EF, #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Êtes vous familier avec l'univers de la blockchain et les les cryptomonnaies ? </h1>
+                        </div>
+                         
+                        <div class="col-md-6">
+                            <canvas id="chart2" style="display: block; box-sizing: border-box; height: 400px; width:400px;" width="400" height="400"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="testomoniam_text text_align_center">
+                                <p>La blockchain étant une nouvelle technologie il est intéressant de savoir qui connait le sujet.</p><br />
+                                <p>Nous remarquons ici que c’est assez équilibré mais nous avons tout de même un peu plus de 50% qui connaissent au minimum le principe de base.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to right, #69A6EF , #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Possédez vous des cryptomonnaies ? </h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Pour une meilleure analyse nous avons demandé si les candidats possèdent de la cryptomonnaies. Cette question permet de savoir si les candidats sont directement touchés par les questions qui suivront avec l’anonymat. Nous apercevons que la majorité (¾ des individus) n’utilise pas la blockchain et ne possèdent pas de cryptomonnaies.</p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4">
+                            <canvas id="chart3" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to left, #69A6EF, #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Êtes vous favorable à l'anonymat sur internet ? </h1>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <canvas id="chart4" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Avant de s’intéresser à l’anonymat et la blockchain nous nous intéressons à l’anonymat en général sur internet. Nous constatons que 70% des candidats préfèrent garder leur anonymat mais nous avons tout de même 10% d’entre eux qui n’ont pas voulu se prononcer.</p>
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to right, #69A6EF , #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Êtes vous favorable à l'anonymat des transactions en blockchain ? </h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Ensuite concernant l’anonymat des transactions cette fois c’est différent. Seulement 49% d’entre souhaite être anonyme et 33% n’ont pas donné leur avis.</p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4">
+                            <canvas id="chart5" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to left, #69A6EF , #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Dans l'hypothèse où pour effectuer la moindre transaction ou accéder à n'importe quel site on devrait s'identifier grâce à un portefeuille crypto. Ce qui dans ce cas reviendrait à s'identifier avec sa carte d'identité. Êtes-vous pour ou contre ?  </h1>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <canvas id="chart6" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Nous avons mis les candidats en situation. Dans cette situation les pourcentages changent, 31% veulent rester anonyme et cette fois-ci seulement 23% n’ont pas donnée leur opinion.</p>
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+
+                <div class="enquete-box m-5 p-4" style=" background: linear-gradient(to right, #69A6EF , #1664C2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="pb-4"style="text-align: center; font-weight: bold;"> Pour finir êtes vous pour ou contre l'anonymat sur la blockchain ? </h1>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testomoniam_text text_align_center">
+                                <p>Pour finir, nous avons reposé la question principale pour vérifier s’ils sont toujours d’accord avec leur choix précédent. On se rend compte que cette fois que la majorité est contre avec 58%.</p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4">
+                            <canvas id="chart7" style="display: block; box-sizing: border-box; height: 243px; width:243px;" width="243" height="243"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class=" mx-5">
+                        <p>Pour conclure, comme nous pouvions nous y attendre nous avons touché un public assez jeune. Etant un nouveau sujet assez complexe beaucoup d’entre eux ne connaissent pas vraiment la blockchain. Et le résultat final reste tout de serrer mais tout de même avec une préférence pour ne pas être anonyme.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- end wallet -->
     <!-- footer -->
     <footer>
@@ -96,4 +248,189 @@
       <script src="js/jquery-3.0.0.min.js "></script>
       <script src="js/custom.js "></script>
    </body>
+
+   <script>
+          const ctx = document.getElementById("chart").getContext('2d');
+          const myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+              labels: ["< 18 ans", "18-24 ans", "25-45 ans", "> 46 ans"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#F39C12", "#2ECC71", "#3498DB",
+                "#C0392B "],
+                borderColor: '#FDFEFE',
+                data: [1, 43, 5, 2],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          });
+
+          const ctx2 = document.getElementById("chart2").getContext('2d');
+          const myChart2 = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+              labels: ["Pas du tout", "Je connais de nom", "Je connais le principe de base", "Je suis un expert dans le domaine"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#F39C12", "#2ECC71", "#3498DB",
+                "#C0392B "],
+                borderColor: '#FDFEFE',
+                data: [8, 14, 27, 2],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+          const ctx3 = document.getElementById("chart3").getContext('2d');
+          const myChart3 = new Chart(ctx3, {
+            type: 'pie',
+            data: {
+              labels: ["Oui", "Non"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#3498DB",
+                "#C0392B "],
+                borderColor: '#FDFEFE',
+                data: [13, 38],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+          const ctx4 = document.getElementById("chart4").getContext('2d');
+          const myChart4 = new Chart(ctx4, {
+            type: 'pie',
+            data: {
+              labels: ["Oui", "Non","Sans avis"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#3498DB",
+                "#C0392B ","#F39C12"],
+                borderColor: '#FDFEFE',
+                data: [36, 10, 5],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+          const ctx5 = document.getElementById("chart5").getContext('2d');
+          const myChart5 = new Chart(ctx5, {
+            type: 'pie',
+            data: {
+              labels: ["Oui", "Non","Sans avis"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#3498DB",
+                "#C0392B ","#F39C12"],
+                borderColor: '#FDFEFE',
+                data: [25, 9, 17],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+          const ctx6 = document.getElementById("chart6").getContext('2d');
+          const myChart6 = new Chart(ctx6, {
+            type: 'pie',
+            data: {
+              labels: ["Pour", "Contre","Sans avis"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#3498DB",
+                "#C0392B ","#F39C12"],
+                borderColor: '#FDFEFE',
+                data: [23, 16, 12],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+          const ctx7 = document.getElementById("chart7").getContext('2d');
+          const myChart7 = new Chart(ctx7, {
+            type: 'pie',
+            data: {
+              labels: ["Pour", "Contre"],
+              datasets: [{
+                label: 'Budget',
+                backgroundColor: ["#3498DB",
+                "#C0392B "],
+                borderColor: '#FDFEFE',
+                data: [20, 48],
+              }]
+            },
+            options: {
+                responsive: false,
+                legend: {
+                  position: 'right',
+                  labels: {
+                    padding: 20,
+                    boxWidth: 10,
+                    fontColor: "white"
+                  }
+                }
+              }
+          }); 
+
+    </script>
 </html>
